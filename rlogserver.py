@@ -16,4 +16,4 @@ def udp_server(host="0.0.0.0", port=rlog_port):
         yield data
 
 for data in udp_server():
-    print(data.decode())
+    print(data.decode('utf-8').strip())
